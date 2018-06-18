@@ -4,21 +4,38 @@ let search = {trending: '&tag=',search: '&q='}; // concatenate strings with inpu
 let topic = ['cow', 'outside', 'diabeetus', 'bronchitis'];
 let limit = '&limit=10'; 
 let rating = '&rating=R';
+
 // let starterURL = "https://api.giphy.com/v1/gifs/" + endpoint[1] + "?api_key=" + API_key + search.search + limit + rating;
 
 $( document ).ready(function() {
     createTopicButtons();
     
-    
-    let queryURL = "https://api.giphy.com/v1/gifs/" + endpoint[1] + "?api_key=" + API_key + search.search + limit + rating;
-    
-    $.ajax({
-        url: queryURL,
-        method: "GET"
+    $('.btn').on('click', function() {
+        let queryURL = "https://api.giphy.com/v1/gifs/" + endpoint[1] + "?api_key=" + API_key + search.search + $(this).text() + limit + rating;
+        console.log(queryURL);
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        })
+        
+        .then(function(response) {
+            console.log(response);
+            console.log(response.data);
+            
+            ;
+            for (i=0; i < response.data.length; i++) {
+                let gifImg = $(`<img class="" src="${response.data[i].images.fixed_width_still.url}">`);
+                let rating = $(`<p>`).text(`Rating: ${response.data[i].rating}`);
+                let newGifDiv = $(`<div id="gifDIV-${i}" class="d-flex flex-column text-center my-auto mx-1"></div>`)
+                console.log(response.data[i].images.fixed_width_still.url);
+                $('#gifSection').prepend(newGifDiv);
+                $(`#gifDIV-${i}`).append(gifImg, rating);
+
+            }
+        });
     })
+
     
-    .then(function(response) {
-    });
 });
 
 function createTopicButtons() {

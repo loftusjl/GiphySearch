@@ -12,11 +12,13 @@ Todo:
     ✔ trending @done(18-06-18 11:54)
     ✔ search @done(18-06-18 11:55)
     ✔ random @done(18-06-18 11:55)
-☐ topics array
-  ☐ create buttons based off array
-☐ buttons grab 10 gifs
+✔ topics array @done(18-06-18 13:48)
+  ✔ create buttons based off array @done(18-06-18 13:48)
+  ☐ input for adding to array
+✔ buttons grab 10 gifs @done(18-06-18 13:48)
   ☐ static / non-animated
   ☐ on('click', toggle animation)
+  `js to change url on click. make variable as toggle sentinel`
 ☐ under each gif display
   ☐ rating
 ☐ add form

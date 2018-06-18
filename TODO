@@ -1,5 +1,36 @@
 
 Todo:
-  ☐ set up API call
+  ✔ set up API call @done(18-06-18 12:07)
+  ☐ create dropdowns with defaults for limit and rating
+  ☐ search on $param usage / ask adam
   ✔ get API key 0Al2XT5XD35ahPXsk85pGa6yi75wv2ga @done(18-06-18 11:24)
+✔ include: @done(18-06-18 12:07)
+  ✔ q - search term @done(18-06-18 12:05)
+  ✔ limit - number of results @done(18-06-18 12:06)
+  ✔ rating - age rating @done(18-06-18 12:07)
+  ✔ enpoint @done(18-06-18 11:54)
+    ✔ trending @done(18-06-18 11:54)
+    ✔ search @done(18-06-18 11:55)
+    ✔ random @done(18-06-18 11:55)
+☐ topics array
+  ☐ create buttons based off array
+☐ buttons grab 10 gifs
+  ☐ static / non-animated
+  ☐ on('click', toggle animation)
+☐ under each gif display
+  ☐ rating
+☐ add form
+  ☐ input add to topics array
+  ☐ on submit call array and output new buttons as needed
 
+//bonus
+☐ mobile responsive
+☐ append an additional 10 gifs rather than overwriting
+☐ display additional gif information
+  ☐ title
+  ☐ tags
+  etc...
+☐ 1-click download button for each gif
+☐ integrate with additional APIs
+☐ create a favorites section
+  ☐ persist storage

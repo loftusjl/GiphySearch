@@ -1,38 +1,67 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Giphy API Search</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="./assets/javascript/main.js"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Giphy API Search</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="./assets/javascript/main.js"></script>
 </head>
+
 <body>
-        <div class="card text-center">
-                <div class="card-header">
-                  Giphy Topics
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Click a topic to load related gif's</h5>
-                  <p class="card-text">add include your own by filling out the below form</p>
-                  <div id="giphyButtons" class="btn-group p-2" role="group" aria-label="Basic example">
-                        <!-- giphy buttons go here -->
-                      </div>
-                </div>
-                <div class="card-footer text-muted">
-                  Something, something, dark side...
-                </div>
-              </div>
-              <div id="gifSection" class="d-flex flex-row">
-                  <!-- gif's go here -->
-              </div>
-    
-    
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <div class="card text-center">
+    <div class="card-header">
+      Giphy Topics
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Click a topic to load related gif's</h5>
+      <p class="card-text">add include your own by filling out the below form</p>
+      <div id="giphyButtons" class="btn-group p-2 input-group" role="group" aria-label="Basic example">
+        <div class="input-group-prepend">
+          <select name="searchType" id="searchType" class="custom-select" aria-labelledby="dropdownMenuButton">
+            <option selected value="0">Trending</option>
+            <!-- Setting the option for Search as default -->
+            <option value="1" selected>Search</option>
+            <option value="2">Random</option>
+          </select>
+        </div>
+        <!-- giphy buttons go here -->
+      </div>
+    </div>
+    <div class="card-footer text-muted text-center mx-auto">
+      <form role="form">
+        <div class="input-group">
+          <input type="text" name="search" id="search-term">
+          <button type="submit" class="btn btn-default" id="add-search">
+            <i class="fa fa-search"></i> Add Search Button</button>
+          <button class="btn btn-default" id="clear-all">
+            <i class="fa fa-trash"></i> Clear Results</button>
+        </div>
+
+          <!-- Buttons -->
+          <div class="form-group">
+          </div>
+      </form>
+      </div>
+    </div>
+    <div id="gifSection" class="d-flex flex-row flex-wrap">
+      <!-- gif's go here -->
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>

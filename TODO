@@ -16,11 +16,11 @@ Todo:
   ✔ create buttons based off array @done(18-06-18 13:48)
   ☐ input for adding to array
 ✔ buttons grab 10 gifs @done(18-06-18 13:48)
-  ☐ static / non-animated
-  ☐ on('click', toggle animation)
-  `js to change url on click. make variable as toggle sentinel`
+  ✔ static / non-animated @done(18-06-19 13:56)
+  ✔ on('click', toggle animation) @done(18-06-19 13:56)
+  ✔ `js to change url on click. make variable as toggle sentinel` @done(18-06-19 13:56)
 ☐ under each gif display
-  ☐ rating
+  ✔ rating @done(18-06-19 13:56)
 ☐ add form
   ☐ input add to topics array
   ☐ on submit call array and output new buttons as needed

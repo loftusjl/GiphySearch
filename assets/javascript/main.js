@@ -19,26 +19,6 @@ $(document).ready(function () {
     $('#gifSection').on('click', 'img', function () {
         toggleAnimation($(this));
     })
-    $('#random-gifs').on('click', function(event) {
-        event.preventDefault();
-        let queryURL = "https://api.giphy.com/v1/gifs/" + endpoint[2] + "?api_key=" + API_key + limit + rating;
-        console.log(queryURL)
-        console.log(`Work in progress.....`)
-    
-        $.ajax({
-                url: queryURL,
-                method: "GET"
-            })
-    
-            .then(function (response) {
-                console.log(response.data);
-
-                    let gifImg = $(`<img class="" data-animationOn="false" "data-animated="${response.data.images.fixed_width.url}" src="${response.data.images.fixed_width_still.url}">`);
-                    let newGifDiv = $(`<div class="d-flex flex-column text-center my-auto mx-1 randomGif"></div>`)
-                    $('#gifSection').prepend(newGifDiv);
-                    $(`.randomGif`).append(gifImg);
-            });
-    })
 });
 
 // FUNCTIONS
@@ -91,25 +71,23 @@ function addButton(s) {
     $('.topic-button').remove();
     createTopicButtons();
 };
+// $('#random-gifs').on('click', function(event) {
+//     event.preventDefault();
+//     let queryURL = "https://api.giphy.com/v1/gifs/random" + "?api_key=" + API_key + limit + rating;
+//     console.log(queryURL)
+//     console.log(`Work in progress.....`)
 
-// $('#add-search').on('click', function() {
-//     typeSelected = parseInt($(this).val());
-//     if (typeSelected === 2) {
-//         queryURL = "https://api.giphy.com/v1/gifs/" + endpoint[typeSelected] + "?api_key=" + API_key + limit + rating;
-//         console.log(`Random: ${queryURL}`);
-//     }
-//     else if ($('#search-term').val()) {
-//         if (typeSelected === 1) {
-//             queryURL = "https://api.giphy.com/v1/gifs/" + endpoint[typeSelected] + "?api_key=" + API_key + search.search + $('#search-term').val() + limit + rating;
-//             console.log(`Search: ${$('#search-term').val()} URL:${queryURL}`);
-//         }
-//         else {
-//             queryURL = "https://api.giphy.com/v1/gifs/" + endpoint[typeSelected] + "?api_key=" + API_key + search.trending + $('#search-term').val() + limit + rating;
-//             console.log(`Trending: ${$('#search-term').val()} URL:${queryURL}`);
-//         }
-//     }
-//     else {
-//         alert(`Please enter text before searching`)
-//     }
-//     createTopicButtons();
+//     $.ajax({
+//             url: queryURL,
+//             method: "GET"
+//         })
+
+//         .then(function (response) {
+//             console.log(response.data);
+
+//                 let gifImg = $(`<img class="" data-animationOn="false" "data-animated="${response.data.images.fixed_width.url}" src="${response.data.images.fixed_width_still.url}">`);
+//                 let newGifDiv = $(`<div class="d-flex flex-column text-center my-auto mx-1 randomGif"></div>`)
+//                 $('#gifSection').prepend(newGifDiv);
+//                 $(`.randomGif`).append(gifImg);
+//         });
 // })

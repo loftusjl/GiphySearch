@@ -2,7 +2,7 @@
 Todo:
   ✔ set up API call @done(18-06-18 12:07)
   ☐ create dropdowns with defaults for limit and rating
-  ☐ search on $param usage / ask adam
+  ☐ search on $param usage
   ✔ get API key 0Al2XT5XD35ahPXsk85pGa6yi75wv2ga @done(18-06-18 11:24)
 ✔ include: @done(18-06-18 12:07)
   ✔ q - search term @done(18-06-18 12:05)
@@ -11,7 +11,8 @@ Todo:
   ✔ enpoint @done(18-06-18 11:54)
     ✔ trending @done(18-06-18 11:54)
     ✔ search @done(18-06-18 11:55)
-    ✔ random @done(18-06-18 11:55)
+    ☐ Fix random Gif function. 
+    `Currently each click adds the previous picture and the new picture stacked on eachother.`
 ✔ topics array @done(18-06-18 13:48)
   ✔ create buttons based off array @done(18-06-18 13:48)
   ✔ input for adding to array @done(18-06-20 10:12)

@@ -8,7 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css" />
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
@@ -17,43 +18,45 @@
 
 <body>
   <div class="card text-center">
-    <div class="card-header">
+    <div class="card-header display-3 font-weight-bold">
       Giphy Topics
     </div>
-    <div class="card-body">
-      <h5 class="card-title">Click a topic to load related gif's</h5>
-      <p class="card-text">add include your own by filling out the below form</p>
-      <div id="giphyButtons" class="btn-group p-2 input-group" role="group" aria-label="Basic example">
+    <div class="card-body shadow">
+      <p class="card-text">Click a topic to load related gif's, or add your own by filling out the below form</p>
+      <div id="giphyButtons" class="btn-group input-group justify-content-center" role="group" aria-label="Basic example">
         <div class="input-group-prepend">
           <select name="searchType" id="searchType" class="custom-select" aria-labelledby="dropdownMenuButton">
             <option selected value="0">Trending</option>
             <!-- Setting the option for Search as default -->
             <option value="1" selected>Search</option>
-            <option value="2">Random</option>
           </select>
         </div>
         <!-- giphy buttons go here -->
       </div>
     </div>
-    <div class="card-footer text-muted text-center mx-auto">
+    <div class="card-footer">
       <form role="form">
-        <div class="input-group">
-          <input type="text" name="search" id="search-term">
+        <div class="input-group my-3">
           <button type="submit" class="btn btn-default" id="add-search">
-            <i class="fa fa-search"></i> Add Search Button</button>
-          <button class="btn btn-default" id="clear-all">
-            <i class="fa fa-trash"></i> Clear Results</button>
-        </div>
-
-          <!-- Buttons -->
-          <div class="form-group">
+            <i class="fas fa-plus"></i> Add Button</button>
+          <input class="form-control" type="text" name="search" id="search-term">
           </div>
-      </form>
+              <button class="btn btn-default" id="clear-all">
+                <i class="fa fa-trash"></i> Clear Results</button>
+                  <button class="btn btn-default disabled" id="random-gifs">
+                    <i class="fas fa-random"></i>Random Gif's</button>
+            <!-- Buttons -->
+            
+            <div class="container">
+          <div class="form-group">
+            </div>
+        </form>
+        </div>
       </div>
-    </div>
-    <div id="gifSection" class="d-flex flex-row flex-wrap">
-      <!-- gif's go here -->
-    </div>
+      <div id="gifSection" class="d-flex flex-row flex-wrap">
+        <!-- gif's go here -->
+      </div>
+   </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

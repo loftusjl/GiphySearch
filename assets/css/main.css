@@ -1,3 +1,23 @@
-#search-term {
-    width: 500px;
+body {
+    /* height: 100%; */
+    background: linear-gradient(to right, rgb(205, 223, 41), rgb(163, 193, 35), rgb(122, 164, 30), rgb(82, 135, 24), rgb(37, 107, 19));
+}
+#gifSection {
+    background: linear-gradient(to right, rgb(205, 223, 41), rgb(163, 193, 35), rgb(122, 164, 30), rgb(82, 135, 24), rgb(37, 107, 19));
+    color: #920720;
+}
+.card-header, .card-text {
+    font-family: 'Permanent Marker', cursive;
+}
+.card {
+    color: #25df50;
+    background-color:#920720;
+}
+.btn {
+    margin: 0 5px;
+    color: #920720;
+    background-color: #25df50;
+}
+#search-term, #searchType {
+    background: linear-gradient(to right, rgb(205, 223, 41), rgb(163, 193, 35), rgb(122, 164, 30), rgb(82, 135, 24), rgb(37, 107, 19));
 }

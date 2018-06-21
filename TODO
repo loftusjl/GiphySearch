@@ -14,20 +14,21 @@ Todo:
     ✔ random @done(18-06-18 11:55)
 ✔ topics array @done(18-06-18 13:48)
   ✔ create buttons based off array @done(18-06-18 13:48)
-  ☐ input for adding to array
+  ✔ input for adding to array @done(18-06-20 10:12)
 ✔ buttons grab 10 gifs @done(18-06-18 13:48)
   ✔ static / non-animated @done(18-06-19 13:56)
   ✔ on('click', toggle animation) @done(18-06-19 13:56)
   ✔ `js to change url on click. make variable as toggle sentinel` @done(18-06-19 13:56)
-☐ under each gif display
+✔ under each gif display @done(18-06-20 10:14)
   ✔ rating @done(18-06-19 13:56)
-☐ add form
-  ☐ input add to topics array
-  ☐ on submit call array and output new buttons as needed
-
+✔ add form @done(18-06-20 10:12)
+  ✔ input add to topics array @done(18-06-20 10:12)
+  ✔ on submit call array and output new buttons as needed @done(18-06-20 10:12)
+// Extra
+☐ change URL based on type dropdown
 //bonus
 ☐ mobile responsive
-☐ append an additional 10 gifs rather than overwriting
+✔ append an additional 10 gifs rather than overwriting @done(18-06-20 10:12)
 ☐ display additional gif information
   ☐ title
   ☐ tags
